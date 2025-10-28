@@ -1,16 +1,27 @@
 /*  your css code here. If applicable */
 #container {
   margin: 20px;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
 }
+
+/* Pseudo-element before the container */
 #container::before {
-  content: "Before Content - ";
+  content: "★ Special Text Before ★ ";
   color: #f00;
   font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
 }
+
+/* Pseudo-element after the container */
 #container::after {
-  content: " - After Content";
+  content: " ★ Special Text After ★";
   color: #f00;
   font-size: 20px;
+  display: block;
+  margin-top: 10px;
 }
+
